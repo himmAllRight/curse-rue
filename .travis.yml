@@ -3,4 +3,9 @@ python:
   - '3.6'
   - '3.7'
 
+# Install Dependencies
+install:
+  - pip install -U pip
+  - pip install -r requirements.txt
+
 script: pylint ncrue
