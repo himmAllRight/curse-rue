@@ -9,8 +9,22 @@
 # QPC_PATH = os.path.join(BASE_NCRUE_DIR, 'ncrue')
 # sys.path.insert(0, QPC_PATH)
 
-# pylint: disable=wrong-import-position
+import sys
+import os
+
+BASE_NCRUE_DIR = os.path.abspath(
+    os.path.normpath(
+        os.path.join(os.path.dirname(sys.argv[0]), '..')))
+NCRUE_PATH = os.path.join(BASE_NCRUE_DIR, 'ncrue')
+sys.path.insert(0, NCRUE_PATH)
+
+
+print(BASE_NCRUE_DIR)
+print(NCRUE_PATH)
+
 from ncrue.tui import TUI
+
 
 if __name__ == "__main__":
     print("main from script")
+    TUI().main()

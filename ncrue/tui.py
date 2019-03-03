@@ -24,4 +24,5 @@ class TUI():
 
     def main(self):
         """Launch main window"""
-        print("tui main: " + self.parser.parse_args())
+        args = self.parser.parse_args()
+        print(f"tui main: {args}")
