@@ -4,7 +4,7 @@
 from setuptools import setup
 
 setup(
-    name="Curse Rue",
+    name="curse rue",
     version="0.0.1",
     author="Ryan Himmelwright",
     author_email="ryan.himmelwright@gmail.com",

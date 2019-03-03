@@ -1,7 +1,6 @@
 astroid==2.2.2
 certifi==2018.11.29
 chardet==3.0.4
-Curse-Rue==0.0.1
 flake8==3.5.0
 idna==2.8
 isort==4.3.9
