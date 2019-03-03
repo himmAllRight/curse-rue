@@ -1,0 +1,16 @@
+#!/use/bin/python
+
+"""Script for running ncrue curses tui"""
+# import os
+# import sys
+
+# BASE_NCRUE_DIR = os.path.normpath(
+#     os.path.join(os.path.dirname(sys.argv[0], '..')))
+# QPC_PATH = os.path.join(BASE_NCRUE_DIR, 'ncrue')
+# sys.path.insert(0, QPC_PATH)
+
+# pylint: disable=wrong-import-position
+from ncrue.tui import TUI
+
+if __name__ == "__main__":
+    print("main from script")

@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-
-## This is an example of curses: https://docs.python.org/2/library/curses.panel.html#module-curses.panel
-## working to turn it into my own
+"""A ncurses CLI to browse rue rss feeds"""
 
 import curses
 from curses import panel
@@ -23,7 +21,7 @@ class Menu(object):
     def navigate(self, n):
         self.position += n
         if self.position < 0:
-            self.position = 0 
+            self.position = 0
         elif self.position >= len(self.items):
             self.position = len(self.items)-1
 
@@ -86,7 +84,7 @@ class MyApp(object):
                  ('Read a Single Feed', curses.flash)
                 ]
         read_feeds_submenu = Menu(add_feed_items, self.screen)
-        
+
         main_menu_items = [
                 ('Add Feed', add_feed_submenu.display),
                 ('Read Feeds', read_feeds_submenu.display),
