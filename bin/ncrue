@@ -24,7 +24,6 @@ print(NCRUE_PATH)
 
 from ncrue.tui import TUI
 
-
 if __name__ == "__main__":
     print("main from script")
-    TUI().main()
+    TUI().main(sys.argv)
