@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 from . import __version__
 
 
-class TUI():
+class TUI:
     """Defines the TUI Class.
 
     Class that is responsible for creating and displaying the TUI.
@@ -14,10 +14,13 @@ class TUI():
 
     def __init__(self):
         """Instantiates the TUI"""
-        self.parser = ArgumentParser(description='Navigate and view\
-                                        Rue RSS feeds in ncurses')
-        self.parser.add_argument('--version', action='version',
-                                 version=__version__)
+        self.parser = ArgumentParser(
+            description="Navigate and view\
+                                        Rue RSS feeds in ncurses"
+        )
+        self.parser.add_argument(
+            "--version", action="version", version=__version__
+        )
 
     def draw_window(self):
         """Draw new window?"""
